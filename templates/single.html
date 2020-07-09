@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Single Post</title>
+</head>
+<body>
+        <a href="{% url 'index' %}">GO BACK...</a>
+    
+    <h2>{{single.title}}</h2>
+    <p>Posted by:{{article.author}},Posted in:{{single.category}}</p>
+    <img src="{{single.image.url}}" alt="{{single.title}}">
+    <p>{{single.content}}</p>
+
+</body>
+</html>
